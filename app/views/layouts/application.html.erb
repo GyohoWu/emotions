@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for?(:title) ? yield(:title) : "Emotions" %></title>
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tag %>
+    <%= yield(:head) %>
+  </head>
+
+  <body>
+
+      <script type="text/javascript">
+          $(function(){
+            $('.top-detail').click(function(){
+
+              var $this = $(this).find('a');
+
+              if($this.hasClass('show')) {
+                  $this.text("close");
+                  $('#more-text').css('display','active');
+                  $('#more-text').slideDown();
+                  $this.removeClass('show');
+              }else{
+                  $this.text("Learn more");
+                  $('#more-text').slideUp();
+                  $this.addClass('show');
+              }
+            });
+
+            $('.scroll').click(function(){
+
+              var href = $(this).attr('href');
+
+              $('html, body').animate({
+                'scrollTop': $(href).offset().top - 70
+
+              }, 900);
+            });
+
+
+            $('.i-1').hover(
+              function(){
+                $(this).next().fadeIn();
+              },
+              function(){
+                $(this).next().fadeOut();
+            });
+
+            $('.i-2').hover(
+              function(){
+                $(this).next().css("display","block");
+            });
+
+            $('.i-3').hover(
+              function(){
+                $(this).next().css("display","block");
+            });
+
+            $('#s_modal').click(function() {
+
+              $('.open_1').css('display','none');
+              $('.open_1').removeClass('open_1');
+
+              $('.open_2').css('display','none');
+              $('.open_2').removeClass('open_2');
+
+              $('.open_4').css('display','none');
+              $('.open_4').removeClass('open_4');
+
+              $('.open_5').css('display','none');
+              $('.open_5').removeClass('open_5');
+
+              var $answer = $('.study_modal');
+              if($answer.hasClass('open_3')) {
+                $answer.removeClass('open_3');
+                $answer.css("display", "none");
+
+              } else {
+                $answer.addClass('open_3');
+                $answer.css("display", "block");
+              }
+            });
+
+            $('#c_modal').click(function() {
+
+              $('.open_1').css('display','none');
+              $('.open_1').removeClass('open_1');
+
+              $('.open_3').css('display','none');
+              $('.open_3').removeClass('open_3');
+
+              $('.open_4').css('display','none');
+              $('.open_4').removeClass('open_4');
+
+              $('.open_5').css('display','none');
+              $('.open_5').removeClass('open_5');
+
+              var $answer = $('.class_modal');
+              if($answer.hasClass('open_2')) {
+                $answer.removeClass('open_2');
+                $answer.css("display", "none");
+
+              } else {
+                $answer.addClass('open_2');
+                $answer.css("display", "block");
+              }
+            });
+
+
+            $('#ch_modal').click(function() {
+
+              $('.open_1').css('display','none');
+              $('.open_1').removeClass('open_1');
+
+              $('.open_2').css('display','none');
+              $('.open_2').removeClass('open_2');
+
+              $('.open_3').css('display','none');
+              $('.open_3').removeClass('open_3');
+
+              $('.open_5').css('display','none');
+              $('.open_5').removeClass('open_5');
+
+              var $answer = $('.chat_modal');
+              if($answer.hasClass('open_4')) {
+                $answer.removeClass('open_4');
+                $answer.css("display", "none");
+
+              } else {
+                $answer.addClass('open_4');
+                $answer.css("display", "block");
+              }
+            });
+
+
+            $('.click_disappear').click(function(){
+
+              $('.open_1').css('display','none');
+              $('.open_1').removeClass('open_1');
+
+              $('.open_2').css('display','none');
+              $('.open_2').removeClass('open_2');
+
+              $('.open_3').css('display','none');
+              $('.open_3').removeClass('open_3');
+
+              $('.open_4').css('display','none');
+              $('.open_4').removeClass('open_4');
+
+              $('.open_5').css('display','none');
+              $('.open_5').removeClass('open_5');
+
+            });
+
+          });
+      </script>
+
+      <div class="study_modal modal">
+          <a href="/emotion/sadness" class="underline">sadness</a>
+          <a href="/emotion/anger" class="underline">anger</a>
+          <a href="/emotion/fear" class="underline">fear</a>
+          <a href="/emotion/anxiety" class="underline">anxiety</a>
+          <a href="/emotion/regret" class="underline">regret</a>
+          <a href="/emotion/unsatisfaction" class="underline">unsatisfaction</a >
+          <a href="/emotion/nervous" class="underline">nervous</a>
+          <a href="/emotion/hatred" class="underline">hatred</a>
+          <a href="/emotion/shame" class="underline">shame</a>
+          <a href="/emotion/contempt" class="underline">contempt</a>
+          <a href="/emotion/jealousy" class="underline">jealousy</a>
+          <a href="/emotion/desertion" class="underline">desertion</a>
+          <a href="/emotion/inferiority" class="underline">inferiority complex</a>
+          <a href="/emotion/resentment" class="underline">resentment</a>
+          <a href="/emotion/discouragement" class="underline">discouragement</a>
+          <a href="/emotion/loneliness" class="underline">loneliness</a>
+      </div>
+
+      <div class="class_modal modal">
+          <a href="/glossary/amygdala" class="underline">amygdala</a>
+          <a href="/glossary/limbic-system" class="underline">limbic system</a>
+          <a href="/glossary/prefrontal-cortex" class="underline">prefrontal cortex</a>
+          <a href="/glossary/patterns-of-recog" class="underline">patterns of recognition</a>
+          <a href="/glossary/para-nerve-system" class="underline">parasympathetic nerve system</a>
+          <a href="/glossary/sympathetic-nerve" class="underline">sympathetic nerve</a>
+      </div>
+
+      <div class="chat_modal modal_2">
+          <a  class="underline">coaching</a>
+          <a  class="underline">comfort zone</a>
+          <a  class="underline">self talk</a>
+          <a  class="underline">goal setting</a>
+      </div>
+
+    <%= yield %>
+  </body>
+</html>

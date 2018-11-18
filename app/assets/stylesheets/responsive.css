@@ -1,0 +1,394 @@
+
+
+@media all and (max-width: 1050px) {
+
+    .search{
+        border-width: medium;
+    }
+
+    .go_bottom{
+        height:100px;
+    }
+
+    .display{
+        display:none;
+    }
+
+    .low{
+         padding-bottom: 19%;
+    }
+
+    .small{
+        font-size:45%;
+    }
+
+    .small_font{
+        font-size:18px;
+    }
+
+    .small-2{
+        font-size:37%;
+    }
+
+    .class_info_2{
+        padding-bottom: 30%;
+    }
+
+    .class_info_3{
+        padding-bottom: 8%;
+    }
+
+    .study_modal{
+        font-size:20px;
+        padding: 10px 0px;
+        height:230px;
+    }
+
+    .header-logo{
+        font-size:35px;
+        margin-top:3%;
+    }
+
+    .modal_2{
+        line-height: 60px;
+        font-size:20px;
+        height: 120px;
+    }
+
+    .ipad_modal{
+
+        height: 120px;
+    }
+}
+
+@media all and (max-width: 500px){
+
+    .glossary{
+        margin-bottom:30px;
+    }
+
+    #more-text{
+        font-size:17px;
+    }
+
+    .go_bottom{
+        height:60px;
+    }
+
+    .iphone_6{
+        margin-bottom:60px;
+    }
+
+
+    .display{
+        display:none;
+    }
+
+    .header-logo{
+        font-size:30px;
+        margin-top:25px;
+    }
+
+    .header-menu-right a{
+        font-size:10px;
+        padding: 10px 5px;
+    }
+
+    header .container{
+        padding-right:8%;
+    }
+
+    .class-info{
+        padding-bottom: 30%;
+    }
+
+    .class_info_2{
+        padding-bottom: 40%;
+    }
+
+    .section-title{
+        padding-top:30px;
+    }
+
+    .small-iphone{
+        font-size:18px;
+    }
+
+    .iphone_size{
+        font-size:9px;
+    }
+
+    .iphone_size_2{
+        font-size:7px;
+    }
+
+    .iphone_size_3{
+        font-size:6px;
+    }
+
+    .class_info_3{
+        padding-right:10%;
+        padding-left:5%;
+        margin:0 auto;
+        padding-bottom: 90px;
+    }
+
+    .center{
+        margin-left:22%;
+        margin-right:45px;
+
+    }
+
+    .class_info_3 p{
+        font-size:13px;
+    }
+
+    .modal{
+      height: 80px;
+      top:75px;
+      position:fixed;
+      z-index: 10;
+      padding-right:2.5%;
+      padding-left:2.5%;
+      margin-left:13%;
+      box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+      border:1px solid rgba(0,0,0,0.1);
+      width:70%;
+      background-color: white;
+      display:none;
+      font-size:10px;
+    }
+
+    .underline{
+        padding:0px 5px;
+        line-height: 40px;
+    }
+
+    .study_modal{
+        font-size:12px;
+        height: 200px;
+    }
+
+    .chat_modal{
+        font-size:13px;
+        line-height:20px;
+        height: 100px;
+    }
+
+    .class_modal{
+        height: 120px;
+    }
+
+}
+
+@media all and (max-width: 500px){
+
+    .iphone_key{
+        margin-top:100px;
+    }
+
+    .modal_4 a{
+        font-size:13px;
+        line-height: 40px;
+    }
+
+    table{
+        font-size:20px;
+    }
+
+    .class_section a{
+        font-size:8px;
+    }
+
+    .iphone_font{
+        font-size:5px;
+    }
+
+    .languages .subject{
+        height:15px;
+        width: 15px;
+        padding:1.6% 2.2%;
+        width:13%;
+        margin-right:6%;
+        margin-bottom:25px;
+        color:white;
+        border-radius: 30px;
+        font-size:8px;
+        float:left;
+        background-color:#e8930b;
+        border:1px solid #e8930b;
+        color:white;
+    }
+
+    .languages .subject:hover{
+      color:#e8930b;
+      background-color:white
+    }
+
+    .languages_2 .subject{
+        height:15px;
+        width: 15px;
+        padding:1.6% 2.2%;
+        width:13%;
+        margin-right:6%;
+        margin-bottom:25px;
+        background-color:rgb(16, 25, 201);
+        border:1px solid rgb(16, 25, 201);
+        color:white;
+        border-radius: 30px;
+        font-size:8px;
+        float:left;
+        color:white;
+    }
+
+    .languages_2 .subject:hover{
+      color:rgb(16, 25, 201);
+      background-color:white
+    }
+
+
+
+    .languages_2{
+        margin-bottom:80px;
+    }
+
+    .class_section .section-title{
+        margin-top:25px;
+    }
+
+    .posts-index{
+        margin-top:100px;
+    }
+
+    font{
+        font-size:10px;
+    }
+
+    .like_function p{
+        font-size:10px;
+    }
+
+    .question_section h1{
+        font-size:20px;
+    }
+
+    .post_link{
+        font-size:15px;
+    }
+
+    .posts-new{
+        margin-top:25%;
+    }
+
+    .post_page{
+        margin-top:25%;
+    }
+
+    .answer{
+        margin: 60px 0;
+    }
+
+    .post_answer{
+        margin-bottom:40px;
+    }
+}
+
+    @media all and (max-width: 400px){
+
+        .header-logo{
+            font-size:18px;
+            margin-top:30px;
+        }
+
+        .small-iphone{
+            font-size:15px;
+        }
+
+        .iphone_size{
+            font-size:50%;
+        }
+
+        .display{
+            display:none;
+        }
+
+        .header-menu-right a{
+            font-size:9px;
+            padding: 10px 4.5px;
+        }
+
+        .small{
+            font-size:40%;
+        }
+
+        .small-2{
+            font-size:37%;
+        }
+
+        .class-info{
+            padding-bottom: 40%;
+        }
+
+        .chat_modal{
+            font-size:10px;
+            height:100px;
+        }
+
+        .study_modal {
+            font-size:10px;
+            height:200px;
+        }
+
+        .class_modal{
+            font-size:13px;
+            height:150px;
+        }
+
+        .modal_4 a{
+            font-size:10px;
+            line-height: 40px;
+        }
+
+        .top-description p{
+            font-size:14px;
+        }
+
+        .class_info_3{
+            padding-right:10%;
+            padding-left:5%;
+            margin:0 auto;
+            padding-bottom: 90px;
+        }
+
+        .center{
+            margin-left:22%;
+            margin-right:45px;
+
+        }
+
+        .class_info_3 p{
+            font-size:11px;
+        }
+
+        #study p{
+           font-size:14.5px;
+        }
+
+        .table-2{
+            font-size:17px;
+        }
+
+        .small-3{
+            font-size:43%;
+        }
+
+        .essay{
+            font-size:20px;
+        }
+
+        .long-ver{
+            width:250px;
+        }
+
+    }
+}
