@@ -183,6 +183,14 @@
 
 @media all and (max-width: 500px){
 
+    .iphone_explanation{
+        display:block;
+    }
+
+    .iphone_explanation_2{
+        display:none;
+    }
+
     .iphone_key{
         margin-top:100px;
     }
@@ -293,7 +301,35 @@
     }
 }
 
+@media all and (max-width: 450px){
+
+    .iphone_explanation_3{
+        display:block;
+    }
+
+    .iphone_explanation_2{
+        display:none;
+    }
+
+    .iphone_explanation{
+        display:none;
+    }
+
+}
+
 @media all and (max-width: 400px){
+
+    .iphone_explanation_3{
+        display:block;
+    }
+
+    .iphone_explanation_2{
+        display:none;
+    }
+
+    .iphone_explanation{
+        display:none;
+    }
 
         .header-logo{
             font-size:16px;
