@@ -59,7 +59,7 @@ class EmotionController < ApplicationController
   end
 
 
-  def loneliness
+  def lethargic
   end
 
 

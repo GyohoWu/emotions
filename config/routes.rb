@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get "/emotion/inferiority" => "emotion#inferiority"
   get "/emotion/resentment" => "emotion#resentment"
   get "/emotion/discouragement" => "emotion#discouragement"
-  get "/emotion/loneliness" => "emotion#loneliness"
+  get "/emotion/lethargic" => "emotion#lethargic"
 
 
   #glossary
